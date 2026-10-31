@@ -57,6 +57,12 @@ Open to AI/ML Engineer, LLM Application and Research Engineer roles starting Dec
 | Unsupervised Learning in R | K-means, self-organizing maps, hierarchical clustering and PCA, validated with gap statistic and silhouette analysis (0.895 adjusted Rand index). | R, tidyverse |
 | Elastic Net from Scratch | Elastic Net regression with gradient descent in NumPy on a 63K-row emissions dataset, with a leakage-safe preprocessing pipeline. | NumPy, pandas |
 
+**Systems**
+
+| Project | Summary | Stack |
+|---|---|---|
+| Pintos Operating System Kernel | Extended the Pintos x86 kernel with a team of 3: alarm clock without busy-waiting, priority scheduling with nested priority donation, a 4.4BSD multilevel feedback queue scheduler with fixed-point math, 13 system calls with user-pointer validation, user-stack argument passing, per-process file descriptors and exec/wait synchronization. | C, x86, QEMU |
+
 ---
 
 ### Publication
