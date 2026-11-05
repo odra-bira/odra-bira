@@ -4,7 +4,7 @@
 
 [Portfolio](https://odra-bira.github.io/) · [LinkedIn](https://www.linkedin.com/in/bira-odra/) · [Resume](https://odra-bira.github.io/Odra_Bira_Resume.pdf) · odrabira@gmail.com
 
-I build LLM applications, retrieval systems and computer vision models, and take them from experiment to working software. I'm a Graduate Student Researcher at the University at Buffalo working on safe planning with diffusion models. Before graduate school I worked as a full-stack developer on React, Node.js and SQL applications.
+I build LLM applications, secure tool-using agents, retrieval systems and computer vision models, and take them from experiment to working software. I'm a Graduate Student Researcher at the University at Buffalo working on safe planning with diffusion models. Before graduate school I worked as a full-stack developer on React, Node.js and SQL applications.
 
 Open to AI/ML Engineer, LLM Application and Research Engineer roles starting December 2026.
 
@@ -34,6 +34,7 @@ Open to AI/ML Engineer, LLM Application and Research Engineer roles starting Dec
 
 | Project | Summary | Stack |
 |---|---|---|
+| [MCP Assistant](https://github.com/odra-bira/mcp-assistant) | Model-agnostic agent on the Model Context Protocol: custom MCP client with a namespaced multi-server tool registry over stdio and Streamable HTTP (bearer-token auth), Claude and local Ollama backends, and a fail-closed human-approval gate for writes. A description scanner quarantines poisoned and colliding tools, cutting attack success on qwen3:8b from 80% to 0%. 34-case tool-use benchmark (91% tool-selection accuracy); 41 tests with a CI security gate. | Python, MCP, Ollama, Starlette, SQLite, GitHub Actions |
 | [StudyEase](https://github.com/odra-bira/Studyplanner) | Full-stack LLM study planner. Provider-agnostic layer over Claude, Gemini and local Ollama; deterministic validation-and-repair engine for model output with rule-based fallback; 5 typed REST endpoints; PDF and image upload; 35 pytest tests. | FastAPI, React, Pydantic, pytest |
 | SkinGPT | RAG assistant: chunking, embedding index, hybrid BM25 + dense retrieval and cross-encoder reranking, with citation-grounded answers. Tuned on a 1,000-question evaluation benchmark to about 75% retrieval precision. | Embeddings, vector search, BM25, LLM APIs |
 | Receipt-to-JSON | Fine-tuned Qwen2.5-3B-Instruct with 4-bit QLoRA on CORD-v2 receipts to produce schema-valid JSON on a single T4 GPU. Evaluation harness for JSON validity, field accuracy and item-level F1. | Hugging Face TRL, PEFT, Unsloth, Gradio |
@@ -80,10 +81,10 @@ Coursework: NLP with Transformers, Deep Learning for Vision Systems, Big Data wi
 ### Skills
 
 **Languages:** Python, Java, SQL, C/C++, R, JavaScript, Bash  
-**Generative AI and LLMs:** Claude and Gemini APIs, Ollama, vLLM, RAG, embeddings, vector search, BM25 hybrid retrieval, cross-encoder reranking, prompt engineering, structured outputs, LLM evaluation, fine-tuning (SFT), LoRA/QLoRA, diffusion models, flow matching  
+**Generative AI and LLMs:** Claude and Gemini APIs, Ollama, vLLM, Model Context Protocol (MCP), tool-using agents, RAG, embeddings, vector search, BM25 hybrid retrieval, cross-encoder reranking, prompt engineering, structured outputs, LLM and agent evaluation, fine-tuning (SFT), LoRA/QLoRA, diffusion models, flow matching  
 **Deep Learning:** PyTorch, TensorFlow/Keras, Hugging Face Transformers, TRL, PEFT, Unsloth, Vision Transformers, CNNs, U-Net, LSTMs, transfer learning, mixed-precision training  
 **Computer Vision:** OpenCV, YOLOv8, MediaPipe, object detection, image restoration, pose estimation, OCR  
 **Machine Learning and RL:** scikit-learn, Optuna, regression and regularization, PCA, clustering, self-organizing maps, model evaluation, SARSA, Q-learning, Gymnasium, D4RL, control barrier functions  
-**Backend and Web:** FastAPI, Flask, Pydantic, REST APIs, React, Vite, Node.js, Gradio, Streamlit  
-**Data and Databases:** pandas, NumPy, Matplotlib, seaborn, tidyverse, Apache Spark, Hadoop, PostgreSQL, MongoDB, schema design, SQL optimization  
-**Tools:** Git, Docker, Linux, CUDA, GPU servers (SSH, tmux), pytest, Weights & Biases, Jupyter, Google Colab
+**Backend and Web:** FastAPI, Flask, Starlette, Pydantic, REST APIs, React, Vite, Node.js, Gradio, Streamlit  
+**Data and Databases:** pandas, NumPy, Matplotlib, seaborn, tidyverse, Apache Spark, Hadoop, PostgreSQL, MongoDB, SQLite, schema design, SQL optimization  
+**Tools:** Git, GitHub Actions, Docker, Linux, CUDA, GPU servers (SSH, tmux), pytest, Weights & Biases, Jupyter, Google Colab
